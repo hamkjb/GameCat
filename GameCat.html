@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Catalog</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>My Game Catalog</h1>
+
+<!-- Game List Display -->
+<div id="gameList"></div>
+
+<!-- Game Addition Form -->
+<form id="gameForm">
+<label for="title">Title:</label>
+<input type="text" id="title" required>
+
+<label for="publisher">Publisher:</label>
+<input type="text" id="publisher" required>
+
+<label for="releaseDate">Release Date:</label>
+<input type="date" id="releaseDate" required>
+
+<label for="gameImage">Game Image URL:</label>
+<input type="url" id="gameImage" required>
+
+<label for="criticScore">Critic Score:</label>
+<input type="number" id="criticScore" min="0" max="100" required>
+
+<label for="personalScore">Personal Score:</label>
+<input type="number" id="personalScore" min="0" max="10" required>
+
+<label for="notes">Personal Notes:</label>
+<textarea id="notes"></textarea>
+
+<button type="submit">Add Game</button>
+</form>
+</div>
+
+</body>
+</html>
